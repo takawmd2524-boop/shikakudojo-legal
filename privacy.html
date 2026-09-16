@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>プライバシーポリシー | 資格道場</title>
+<style>
+  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.8; color: #1c2b45; background: #f6f3ea; }
+  h1 { font-size: 1.5rem; border-bottom: 2px solid #8b6b3d; padding-bottom: 12px; }
+  h2 { font-size: 1.1rem; margin-top: 2em; }
+  .updated { color: #666; font-size: 0.85rem; margin-bottom: 2em; }
+  a { color: #8b6b3d; }
+  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
+  th, td { border: 1px solid #d8cfb8; padding: 8px 10px; text-align: left; font-size: 0.95em; }
+  th { background: #ece4d0; }
+</style>
+</head>
+<body>
+<h1>プライバシーポリシー</h1>
+<p class="updated">最終更新日: 2026年9月16日</p>
+
+<p>「資格道場」（以下「本アプリ」）は、利用者のプライバシーを尊重し、以下の方針に基づいて運営しています。</p>
+
+<h2>収集する情報</h2>
+<p>本アプリは、資格試験の学習を目的とした暗記カード（単語帳）アプリです。利用にあたり、以下の情報を取り扱います。</p>
+<table>
+  <tr><th>情報の種類</th><th>内容・目的</th></tr>
+  <tr><td>匿名ID</td><td>初回起動時にFirebase Authenticationにより自動発行される匿名の識別子です。氏名・メールアドレス等の個人情報の入力は不要です。</td></tr>
+  <tr><td>学習データ</td><td>作成した単語帳・カード（表面/裏面のテキスト）、復習の進捗状況は、上記の匿名IDに紐づけてGoogle Firebase（Firestore）に保存され、端末をまたいだ利用や機種変更後の復元に使用されます。</td></tr>
+  <tr><td>AI生成に入力したテキスト・画像</td><td>「AIでカードを作成」機能で入力したテキストや、有料プランで選択した写真は、カード自動生成のためGoogle Cloud上のサーバー（Cloud Functions）経由でGoogle Gemini APIに送信されます。生成結果を保存するかどうかは利用者の確認・編集操作を経て決定され、送信した原文・画像自体を本アプリが恒久的に保存することはありません。</td></tr>
+  <tr><td>読み上げ用テキスト</td><td>有料プランの「高音質読み上げ」機能で再生したカードのテキストは、音声合成のためGoogle Cloud Text-to-Speech APIに送信されます。生成された音声データは同じ内容の再合成を避けるためサーバー側でキャッシュされます。</td></tr>
+  <tr><td>購入情報</td><td>サブスクリプションの購入・更新状況は、Appleの決済システム（StoreKit）を通じて処理され、その有効性の確認結果のみが匿名IDに紐づけて保存されます。クレジットカード番号等の決済情報自体を本アプリや開発者が保持・取得することはありません。</td></tr>
+</table>
+
+<h2>Apple IDとの連携（任意）</h2>
+<p>有料プランご購入後、機種変更時のデータ引き継ぎを目的として、任意でSign in with Appleによるアカウント連携をご案内する場合があります。連携するかどうかは利用者が選択でき、連携しない場合も引き続き匿名IDでご利用いただけます。</p>
+
+<h2>第三者への提供</h2>
+<p>本アプリは、上記の目的（データ保存・AIによるカード生成・音声合成・決済処理）以外で、利用者の情報を第三者に提供・共有することはありません。広告配信のためのトラッキングは行っていません。</p>
+<p>データの処理・保存には、以下の外部サービスを利用しています。それぞれのプライバシーポリシーもあわせてご確認ください。</p>
+<ul>
+  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google（Firebase / Gemini API / Cloud Text-to-Speech）</a></li>
+  <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple（App Store決済 / Sign in with Apple）</a></li>
+</ul>
+
+<h2>アプリ内課金について</h2>
+<p>本アプリのサブスクリプション購入処理は、Apple Inc. が提供するApp Storeの決済システムを通じて行われます。決済情報（クレジットカード番号等）は本アプリおよび開発者が保持・アクセスすることはありません。</p>
+
+<h2>データの削除</h2>
+<p>作成した単語帳・カードは、アプリ内の操作でいつでも削除できます。匿名IDに紐づく全データの削除をご希望の場合は、下記お問い合わせ先までご連絡ください。</p>
+
+<h2>お問い合わせ</h2>
+<p>本ポリシーに関するお問い合わせは、<a href="mailto:takawmd2524@gmail.com">takawmd2524@gmail.com</a> までご連絡ください。</p>
+
+<h2>ポリシーの変更</h2>
+<p>本ポリシーは、必要に応じて予告なく変更されることがあります。変更後の内容は本ページに掲載された時点で効力を生じます。</p>
+
+<p><a href="./index.html">トップページに戻る</a></p>
+</body>
+</html>
