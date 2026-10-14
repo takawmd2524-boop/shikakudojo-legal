@@ -1,60 +1,92 @@
 <!doctype html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>プライバシーポリシー | 資格道場</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Privacy Policy | Kioku – AI Flashcard Maker</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.8; color: #1c2b45; background: #f6f3ea; }
-  h1 { font-size: 1.5rem; border-bottom: 2px solid #8b6b3d; padding-bottom: 12px; }
-  h2 { font-size: 1.1rem; margin-top: 2em; }
-  .updated { color: #666; font-size: 0.85rem; margin-bottom: 2em; }
-  a { color: #8b6b3d; }
-  table { border-collapse: collapse; width: 100%; margin: 1em 0; }
-  th, td { border: 1px solid #d8cfb8; padding: 8px 10px; text-align: left; font-size: 0.95em; }
-  th { background: #ece4d0; }
+:root{--ink:#0b0b0b;--muted:#6e6e6a;--line:#e2e2de;--paper:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#f4f4f2;--muted:#9a9a96;--line:#2c2c2c;--paper:#000}}
+body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Sans",sans-serif;max-width:720px;margin:0 auto;padding:40px 20px 80px;line-height:1.75;color:var(--ink);background:var(--paper)}
+h1{font-family:"New York",Georgia,serif;font-weight:600;font-size:2rem;margin:0 0 4px}
+h2{font-family:"New York",Georgia,serif;font-size:1.2rem;margin-top:2.2em;border-top:1px solid var(--line);padding-top:1.2em}
+h3{font-size:1rem;margin-top:1.6em}
+.eyebrow{font:500 11px ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted);font-size:.9rem}
+a{color:var(--ink)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95em}
+th,td{border-top:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{width:30%;font-weight:600}
+nav{margin-bottom:28px}nav a{margin-right:16px}
 </style>
-</head>
-<body>
-<h1>プライバシーポリシー</h1>
-<p class="updated">最終更新日: 2026年9月16日</p>
+</head><body>
+<nav><a href="index.html">Kioku</a><a href="#ja">日本語</a></nav>
+<div class="eyebrow">Kioku – AI Flashcard Maker (formerly 資格道場)</div>
+<h1>Privacy Policy</h1>
+<p class="muted">Last updated: October 14, 2026</p>
+<p>Kioku ("the app") is a flashcard app with spaced repetition. This policy explains what data the app handles and why.</p>
 
-<p>「資格道場」（以下「本アプリ」）は、利用者のプライバシーを尊重し、以下の方針に基づいて運営しています。</p>
-
-<h2>収集する情報</h2>
-<p>本アプリは、資格試験の学習を目的とした暗記カード（単語帳）アプリです。利用にあたり、以下の情報を取り扱います。</p>
+<h2>Data we handle</h2>
 <table>
-  <tr><th>情報の種類</th><th>内容・目的</th></tr>
-  <tr><td>匿名ID</td><td>初回起動時にFirebase Authenticationにより自動発行される匿名の識別子です。氏名・メールアドレス等の個人情報の入力は不要です。</td></tr>
-  <tr><td>学習データ</td><td>作成した単語帳・カード（表面/裏面のテキスト）、復習の進捗状況は、上記の匿名IDに紐づけてGoogle Firebase（Firestore）に保存され、端末をまたいだ利用や機種変更後の復元に使用されます。</td></tr>
-  <tr><td>AI生成に入力したテキスト・画像</td><td>「AIでカードを作成」機能で入力したテキストや、有料プランで選択した写真は、カード自動生成のためGoogle Cloud上のサーバー（Cloud Functions）経由でGoogle Gemini APIに送信されます。生成結果を保存するかどうかは利用者の確認・編集操作を経て決定され、送信した原文・画像自体を本アプリが恒久的に保存することはありません。</td></tr>
-  <tr><td>読み上げ用テキスト</td><td>有料プランの「高音質読み上げ」機能で再生したカードのテキストは、音声合成のためGoogle Cloud Text-to-Speech APIに送信されます。生成された音声データは同じ内容の再合成を避けるためサーバー側でキャッシュされます。</td></tr>
-  <tr><td>購入情報</td><td>サブスクリプションの購入・更新状況は、Appleの決済システム（StoreKit）を通じて処理され、その有効性の確認結果のみが匿名IDに紐づけて保存されます。クレジットカード番号等の決済情報自体を本アプリや開発者が保持・取得することはありません。</td></tr>
+<tr><th>Anonymous ID</th><td>On first launch, Firebase Authentication issues an anonymous identifier. You never enter your name or email.</td></tr>
+<tr><th>Study data</th><td>Your decks, cards, and review progress are stored in Google Firebase (Cloud Firestore), linked to the anonymous ID, so they can sync and be restored.</td></tr>
+<tr><th>Material sent to AI</th><td>When you use "Create with AI", the text, photo (Pro), or topic you submit is sent through our server (Google Cloud Functions) to <strong>Google's Gemini API, a third-party AI service</strong>, only to generate cards. The app asks for your permission before the first use. We do not permanently store the submitted material; you choose which generated cards to save.</td></tr>
+<tr><th>Scans and PDFs</th><td>Scanned pages and PDFs are read <strong>on your device</strong>. Only the recognized text is sent, and only when you choose to create cards with AI.</td></tr>
+<tr><th>Read-aloud</th><td>Read-aloud uses your device's built-in voices and sends nothing. (Version 1.x of the app used Google Cloud Text-to-Speech for subscribers; that text was sent to Google for speech synthesis and the audio cached on our server.)</td></tr>
+<tr><th>Usage counters</th><td>The number of AI cards generated this month is stored with your anonymous ID to apply your plan's monthly allowance. Aggregate token counts (not linked to any user) are recorded to monitor service costs.</td></tr>
+<tr><th>Purchases</th><td>Subscriptions are processed by Apple. We store only the verified subscription status, product, expiry date, and Apple's original transaction ID, linked to the anonymous ID. We never receive your payment details.</td></tr>
+<tr><th>Reminders &amp; streaks</th><td>Daily reminder settings and your study streak are stored only on your device.</td></tr>
 </table>
 
-<h2>Apple IDとの連携（任意）</h2>
-<p>有料プランご購入後、機種変更時のデータ引き継ぎを目的として、任意でSign in with Appleによるアカウント連携をご案内する場合があります。連携するかどうかは利用者が選択でき、連携しない場合も引き続き匿名IDでご利用いただけます。</p>
+<h2>What we don't do</h2>
+<p>We do not sell your data, show ads, or track you across other apps or websites. Data is used only to provide the app's features.</p>
 
-<h2>第三者への提供</h2>
-<p>本アプリは、上記の目的（データ保存・AIによるカード生成・音声合成・決済処理）以外で、利用者の情報を第三者に提供・共有することはありません。広告配信のためのトラッキングは行っていません。</p>
-<p>データの処理・保存には、以下の外部サービスを利用しています。それぞれのプライバシーポリシーもあわせてご確認ください。</p>
+<h2>Service providers</h2>
 <ul>
-  <li><a href="https://policies.google.com/privacy" target="_blank" rel="noopener">Google（Firebase / Gemini API / Cloud Text-to-Speech）</a></li>
-  <li><a href="https://www.apple.com/legal/privacy/" target="_blank" rel="noopener">Apple（App Store決済 / Sign in with Apple）</a></li>
+<li>Google (Firebase, Cloud Functions, Gemini API) — <a href="https://policies.google.com/privacy">Privacy Policy</a>. Paid Gemini API services do not use submitted content to train Google's models, per Google's terms.</li>
+<li>Apple (App Store payments) — <a href="https://www.apple.com/legal/privacy/">Privacy Policy</a></li>
 </ul>
 
-<h2>アプリ内課金について</h2>
-<p>本アプリのサブスクリプション購入処理は、Apple Inc. が提供するApp Storeの決済システムを通じて行われます。決済情報（クレジットカード番号等）は本アプリおよび開発者が保持・アクセスすることはありません。</p>
+<h2>Deleting your data</h2>
+<p>You can delete individual cards and decks, or everything at once from Settings › "Delete all decks and cards". To delete the remaining account record (usage counters and subscription status), email us from the app's Support page with the request.</p>
 
+<h2>Children</h2>
+<p>The app is not directed at children under 13 and does not knowingly collect personal information from them.</p>
+
+<h2>Contact</h2>
+<p>takawmd2524@gmail.com</p>
+
+<h2>Changes</h2>
+<p>We may update this policy. Changes take effect when posted on this page.</p>
+
+<hr id="ja" style="margin:56px 0;border:none;border-top:1px solid var(--line)">
+<div class="eyebrow" lang="ja">Kioku – AI暗記カードメーカー（旧：資格道場）</div>
+<h1 lang="ja">プライバシーポリシー</h1>
+<div lang="ja">
+<p class="muted">最終更新日：2026年10月14日</p>
+<p>「Kioku」（以下「本アプリ」）は、間隔反復で学習する暗記カードアプリです。本アプリが取り扱う情報とその目的は以下のとおりです。</p>
+<h2>取り扱う情報</h2>
+<table>
+<tr><th>匿名ID</th><td>初回起動時にFirebase Authenticationが自動発行する匿名の識別子です。氏名やメールアドレスの入力は不要です。</td></tr>
+<tr><th>学習データ</th><td>デッキ・カード・復習の進捗は、匿名IDに紐づけてGoogle Firebase（Cloud Firestore）に保存され、同期や復元に使われます。</td></tr>
+<tr><th>AIに送信する教材</th><td>「AIで作成」を使うと、入力したテキスト・写真（Pro）・トピックが当方のサーバー（Google Cloud Functions）を経由して<strong>第三者のAIサービスであるGoogleのGemini API</strong>に送信され、カード作成のためだけに使われます。初回利用前にアプリ内で同意を確認します。送信した教材そのものを恒久的に保存することはありません。保存するカードは利用者が選びます。</td></tr>
+<tr><th>スキャン・PDF</th><td>スキャンしたページやPDFは<strong>端末内で</strong>読み取ります。送信されるのは認識した文字だけで、AIでカードを作成する操作をしたときに限ります。</td></tr>
+<tr><th>読み上げ</th><td>端末内蔵の音声を使い、外部には送信しません。（バージョン1.xでは有料プランの読み上げにGoogle Cloud Text-to-Speechを使用しており、そのテキストを音声合成のためGoogleに送信し、音声を当方サーバーにキャッシュしていました。）</td></tr>
+<tr><th>利用回数</th><td>プランごとの月間上限を適用するため、今月作成したAIカードの枚数を匿名IDに紐づけて保存します。サービス原価の把握のため、利用者と紐づかない集計トークン数を記録します。</td></tr>
+<tr><th>購入情報</th><td>サブスクリプションはAppleが処理します。当方が保存するのは、検証済みの購読状態・商品・有効期限・Appleの取引IDのみ（匿名IDに紐づけ）で、決済情報を受け取ることはありません。</td></tr>
+<tr><th>リマインダー・連続記録</th><td>端末内にのみ保存します。</td></tr>
+</table>
+<h2>行わないこと</h2>
+<p>情報の販売、広告表示、他のアプリやウェブサイトをまたいだトラッキングは行いません。情報はアプリの機能提供のためだけに使います。</p>
+<h2>利用している外部サービス</h2>
+<ul>
+<li>Google（Firebase・Cloud Functions・Gemini API）— <a href="https://policies.google.com/privacy?hl=ja">プライバシーポリシー</a>。Googleの規約上、有料のGemini APIに送信された内容はGoogleのモデルの学習に使われません。</li>
+<li>Apple（App Store決済）— <a href="https://www.apple.com/jp/legal/privacy/">プライバシーポリシー</a></li>
+</ul>
 <h2>データの削除</h2>
-<p>作成した単語帳・カードは、アプリ内の操作でいつでも削除できます。匿名IDに紐づく全データの削除をご希望の場合は、下記お問い合わせ先までご連絡ください。</p>
-
+<p>カードやデッキは個別に、または「設定」›「すべてのデッキとカードを削除」から一括で削除できます。残る利用記録（利用回数・購読状態）の削除をご希望の場合は、サポートページの連絡先までご連絡ください。</p>
+<h2>子どもについて</h2>
+<p>本アプリは13歳未満の子どもを対象としておらず、意図的に個人情報を収集することはありません。</p>
 <h2>お問い合わせ</h2>
-<p>本ポリシーに関するお問い合わせは、<a href="mailto:takawmd2524@gmail.com">takawmd2524@gmail.com</a> までご連絡ください。</p>
-
-<h2>ポリシーの変更</h2>
-<p>本ポリシーは、必要に応じて予告なく変更されることがあります。変更後の内容は本ページに掲載された時点で効力を生じます。</p>
-
-<p><a href="./index.html">トップページに戻る</a></p>
-</body>
-</html>
+<p>takawmd2524@gmail.com</p>
+<h2>改定</h2>
+<p>本ポリシーは必要に応じて改定することがあり、本ページに掲載した時点で効力を生じます。</p>
+</div>
+</body></html>

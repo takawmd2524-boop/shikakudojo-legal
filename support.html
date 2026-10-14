@@ -1,39 +1,56 @@
 <!doctype html>
-<html lang="ja">
-<head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>サポート | 資格道場</title>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Support | Kioku – AI Flashcard Maker</title>
 <style>
-  body { font-family: -apple-system, BlinkMacSystemFont, "Hiragino Sans", "Yu Gothic", sans-serif; max-width: 720px; margin: 0 auto; padding: 32px 20px 80px; line-height: 1.8; color: #1c2b45; background: #f6f3ea; }
-  h1 { font-size: 1.5rem; border-bottom: 2px solid #8b6b3d; padding-bottom: 12px; }
-  h2 { font-size: 1.1rem; margin-top: 2em; }
-  a { color: #8b6b3d; }
-  dt { font-weight: bold; margin-top: 1.2em; }
+:root{--ink:#0b0b0b;--muted:#6e6e6a;--line:#e2e2de;--paper:#fff}
+@media (prefers-color-scheme:dark){:root{--ink:#f4f4f2;--muted:#9a9a96;--line:#2c2c2c;--paper:#000}}
+body{font-family:-apple-system,BlinkMacSystemFont,"Helvetica Neue","Hiragino Sans",sans-serif;max-width:720px;margin:0 auto;padding:40px 20px 80px;line-height:1.75;color:var(--ink);background:var(--paper)}
+h1{font-family:"New York",Georgia,serif;font-weight:600;font-size:2rem;margin:0 0 4px}
+h2{font-family:"New York",Georgia,serif;font-size:1.2rem;margin-top:2.2em;border-top:1px solid var(--line);padding-top:1.2em}
+h3{font-size:1rem;margin-top:1.6em}
+.eyebrow{font:500 11px ui-monospace,Menlo,monospace;letter-spacing:.16em;text-transform:uppercase;color:var(--muted)}
+.muted{color:var(--muted);font-size:.9rem}
+a{color:var(--ink)}
+table{border-collapse:collapse;width:100%;margin:1em 0;font-size:.95em}
+th,td{border-top:1px solid var(--line);padding:10px 8px;text-align:left;vertical-align:top}
+th{width:30%;font-weight:600}
+nav{margin-bottom:28px}nav a{margin-right:16px}
 </style>
-</head>
-<body>
+</head><body>
+<nav><a href="index.html">Kioku</a><a href="#ja">日本語</a></nav>
+<div class="eyebrow">Kioku – AI Flashcard Maker</div>
+<h1>Support</h1>
+<p>Questions, bug reports, or feature ideas? Email <a href="mailto:takawmd2524@gmail.com">takawmd2524@gmail.com</a>. We usually reply within a few days.</p>
+<h2>FAQ</h2>
+<h3>How many AI cards can I create?</h3>
+<p>Free: 20 per month (up to 5,000 characters per request). Pro: 600 per month (up to 20,000 characters), plus photo, PDF, and topic input. During a free trial the allowance is 100. Allowances reset on the 1st of each month (UTC).</p>
+<h3>How do I cancel my subscription?</h3>
+<p>Open the iPhone Settings app › your name › Subscriptions › Kioku. Cancel at least 24 hours before the renewal date.</p>
+<h3>I changed phones. How do I get Pro back?</h3>
+<p>Open Kioku › Settings › Restore purchases while signed in with the same Apple Account.</p>
+<h3>Can I import from Anki or Quizlet?</h3>
+<p>Yes. Export a CSV or TSV with the front in the first column and the back in the second, then use + › Import CSV / list in a deck.</p>
+<h3>Read-aloud sounds robotic.</h3>
+<p>Download higher-quality voices in Settings › Accessibility › Spoken Content › Voices.</p>
+<h3>How do I delete my data?</h3>
+<p>Settings › Delete all decks and cards. See the <a href="privacy.html">Privacy Policy</a> for full deletion requests.</p>
+
+<hr id="ja" style="margin:56px 0;border:none;border-top:1px solid var(--line)">
+<div lang="ja">
 <h1>サポート</h1>
-
-<p>「資格道場」（資格試験横断・暗記カード学習アプリ）に関するご質問・不具合報告・ご要望は、下記メールアドレスまでご連絡ください。</p>
-
-<p><strong>お問い合わせ先: <a href="mailto:takawmd2524@gmail.com">takawmd2524@gmail.com</a></strong></p>
-
-<h2>よくあるご質問</h2>
-<dl>
-  <dt>無料プランでどこまで利用できますか？</dt>
-  <dd>単語帳1つ・カード10枚まで、AIによるカード自動生成は累計3枚まで無料でお試しいただけます。有料プラン（月額または年額サブスクリプション）にご登録いただくと、単語帳・カード・AIカードすべて無制限、最適化された復習スケジューラー、写真からのカード作成、高音質読み上げ、PDF書き出しの各機能をご利用いただけます。</dd>
-
-  <dt>サブスクリプションを解約するには？</dt>
-  <dd>iPhoneの「設定」アプリ &gt; ご自身のApple ID &gt; 「サブスクリプション」から本アプリのサブスクリプションを選択し、解約手続きを行ってください。アプリ内からの解約はできません（Appleの仕組み上の制限です）。</dd>
-
-  <dt>購入内容を機種変更後も使えますか？</dt>
-  <dd>アプリ内の「設定」画面から「購入を復元」を行うことで、同じApple IDでのサブスクリプション状態を復元できます。学習データ（単語帳・カード）自体は匿名アカウントに紐づいているため、機種変更時にデータを引き継ぎたい場合は、購入後にご案内するApple ID連携を事前に行ってください。</dd>
-
-  <dt>AIで生成されたカードの内容が正しくないことがあります。</dt>
-  <dd>AIによる自動生成のため、まれに不正確な内容が含まれる場合があります。保存前のレビュー画面で必ず内容をご確認・編集のうえ保存してください。</dd>
-</dl>
-
-<p><a href="./index.html">トップページに戻る</a></p>
-</body>
-</html>
+<p>ご質問・不具合のご報告・ご要望は <a href="mailto:takawmd2524@gmail.com">takawmd2524@gmail.com</a> までお送りください。通常数日以内にお返事します。</p>
+<h2>よくある質問</h2>
+<h3>AIでは何枚作れますか？</h3>
+<p>無料プランは毎月20枚（1回5,000文字まで）、Proは毎月600枚（1回20,000文字まで）で、写真・PDF・トピックからの作成も使えます。無料トライアル中は100枚です。枠は毎月1日（UTC）にリセットされます。</p>
+<h3>サブスクリプションを解約するには？</h3>
+<p>iPhoneの「設定」›ご自身の名前›「サブスクリプション」›「Kioku」から解約できます。更新日の24時間前までに手続きしてください。</p>
+<h3>機種変更したらProが外れました</h3>
+<p>同じApple Accountでサインインした状態で、Kiokuの「設定」›「購入を復元」をタップしてください。</p>
+<h3>AnkiやQuizletから移行できますか？</h3>
+<p>はい。1列目に表面、2列目に裏面のCSV/TSVを書き出し、デッキの「＋」›「CSV／リストを取り込む」から取り込めます。</p>
+<h3>読み上げの声が機械的です</h3>
+<p>「設定」›「アクセシビリティ」›「読み上げコンテンツ」›「声」から高音質の声をダウンロードしてください。</p>
+<h3>データを削除するには？</h3>
+<p>「設定」›「すべてのデッキとカードを削除」から削除できます。完全な削除のご依頼は<a href="privacy.html#ja">プライバシーポリシー</a>をご覧ください。</p>
+</div>
+</body></html>
